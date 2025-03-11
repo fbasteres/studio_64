@@ -1,0 +1,21 @@
+services:
+   phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin_2
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: ${DB_USERNAME}
+      PMA_PASSWORD: ${DB_PASSWORD}
+      PMA_PORT: 3306
+    ports:
+      - "8081:80"
+    depends_on:
+      - mariadb
+    networks:
+      - sail # Usa la misma red definida en tu archivo base
+
+networks:
+  sail:
+    driver: bridge # Especifica un controlador para la red (opcional)
+
+

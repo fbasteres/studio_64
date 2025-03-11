@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fsoeriiy/public_html/
+    - /bin/cp -R public/build $DEPLOYPATH
+    - /bin/cp -R public/src $DEPLOYPATH
+    - /bin/cp  .htaccess $DEPLOYPATH
+    - /bin/cp  index.php $DEPLOYPATH
+    - /bin/cp  robots.txt $DEPLOYPATH
