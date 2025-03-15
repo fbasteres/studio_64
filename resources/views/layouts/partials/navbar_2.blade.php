@@ -1,37 +1,54 @@
-<header class="navbar navbar-expand-md prg-header__fixed prg-header">
-    <div class="container">
-        <a href="{{ route('inicio1') }}" class="navbar-brand">
-			<img class="header--logo" src="{{ asset('src/img/Logo_web.svg') }}" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="color: var(--tblr-white);"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <nav class="navbar-nav ms-auto">
-                <div class="nav-item">
-                    <a class="nav-link active" href="{{ route('inicio1') }}"><span class="nav-link-title">Inicio</span></a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="{{ route('servicio.page') }}"><span
-                            class="nav-link-title">Servicios</span></a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#"><span class="nav-link-title">Información</span></a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#"><span class="nav-link-title">Locacion</span></a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#"><span class="nav-link-title">Nosotros</span></a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#"><span class="nav-link-title">Contacto</span></a>
-                </div>
-                <div class="nav-item">
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
-                </div>
-            </nav>
-        </div>
-    </div>
+<header class="fixed w-full z-50 bg-black/70 backdrop-blur-md text-white py-2">
+  <div class="container mx-auto flex items-center justify-between px-6">
+    
+    <!-- Logo -->
+    <a href="{{ route('inicio1') }}" class="flex items-center">
+      <img class="h-10" src="{{ asset('src/img/Logo_web.svg') }}" alt="Logo">
+    </a>
+
+    <!-- Botón menú móvil -->
+    <button id="menuToggle" class="lg:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+    <!-- Menú principal -->
+    <nav id="navbarMenu" class="hidden lg:flex lg:items-center space-x-10">
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('inicio1') }}">Inicio</a>
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('servicio.page') }}">Servicios</a>
+      <a class="text-white hover:text-blue-400 transition" href="#">Información</a>
+      <a class="text-white hover:text-blue-400 transition" href="#">Locación</a>
+      <a class="text-white hover:text-blue-400 transition" href="#">Nosotros</a>
+      <a class="text-white hover:text-blue-400 transition" href="#">Contacto</a>
+      <a href="#" class="bg-white text-black px-4 py-1 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition">
+  Comprar ahora
+</a>
+    </nav>
+
+  </div>
+
+</nav>
+
+  </div>
+
+  <!-- Menú desplegable en móviles -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md">
+    <nav class="flex flex-col space-y-4 p-6">
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('inicio1') }}">Inicio</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('servicio.page') }}">Servicios</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Información</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Locación</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Nosotros</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Contacto</a>
+      <a href="#" class="bg-blue-600 text-white text-center px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Comprar ahora</a>
+    </nav>
+  </div>
 </header>
+
+<!-- Script para abrir y cerrar el menú móvil -->
+<script>
+  document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+</script>
