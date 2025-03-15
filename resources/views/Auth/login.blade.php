@@ -2,7 +2,7 @@
 <div class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
   <div class="max-w-md w-full bg-white rounded-xl shadow-lg p-8">
     <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Inicia sesion</h2>
-    
+    <x-alert type="danger" :message="session('error') ?? ''" />
     <form class="space-y-4" action="{{ route('auth.login') }}" method="POST">
       @csrf
       <div>
@@ -10,7 +10,8 @@
         <input 
           type="email" 
           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
-          placeholder="ingrese correo electrónico" name="email" id="email" 
+          placeholder="ingrese correo electrónico" name="email"
+          value="{{ old('email') }}" 
         />
       </div>
 
@@ -19,7 +20,7 @@
         <input 
           type="password" 
           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
-          placeholder="••••••••" name="password" id="password" 
+          placeholder="••••••••" name="password"
         />
       </div>
 

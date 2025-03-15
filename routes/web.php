@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\Route;
 Route::get ('/',[HomeController::class, 'index'])->name('inicio1');
 
 //Autenticacion
-Route::get ('login',[AuthController::class, 'index'])->name('auth.index');
-Route::post('login', [AuthController::class, 'login'])->name('auth.login');
+Route::get ('/login',[AuthController::class, 'index'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 //Administracion
 Route::get ('/admin',[DashboardController::class, 'dashboard'])->name('admin');

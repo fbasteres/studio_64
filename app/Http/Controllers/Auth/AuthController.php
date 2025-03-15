@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Services\Auth\AuthService;
 use App\Enums\Auth\AlertText;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -19,10 +20,15 @@ class AuthController extends Controller
         $this->authService = $authService;
     }
 
-    public function index(): View
+    public function index(): View|RedirectResponse
     {
+        if (Auth::check()) {
+            return redirect()->route('admin');
+        }
+    
         return view('auth.login');
     }
+
 
     public function login(Request $request): RedirectResponse
     {

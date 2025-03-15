@@ -7,15 +7,18 @@
     <title>Studio64 @yield('title')</title>
     @include('layouts.style')
 </head>
-<body class="min-h-screen"> <!-- Agregado min-h-screen para asegurar altura mínima -->
+<body class="min-h-screen bg-gray-100 "> <!-- Agregado min-h-screen para asegurar altura mínima -->
     <!-- Contenedor flex padre que envuelve sidebar y contenido -->
     <div class="flex h-screen">
         <!-- Sidebar -->
         @include('layouts.partials.admin.sidebar')
 
         <!-- Contenido principal -->
-        <div class="flex-1 overflow-y-auto p-4"> <!-- Agregado padding y overflow vertical -->
-            @yield('content')
+        <div class="flex-1 overflow-y-auto p-4 container mx-auto"> 
+            <main class="py-9">
+                @yield('content')
+            </main>
+            
         </div>
     </div>
 </body>
