@@ -4,9 +4,8 @@
     <div class="container container-tight py-4">
       <div class="text-center mb-4">
         <!-- BEGIN NAVBAR LOGO -->
-        <a href="{{ route('inicio1') }}" class="navbar-brand">
-			<img class="header--logo" src="{{ asset('src/img/Logo_web.svg') }}" alt="">
-        </a>
+			<img class="s64__login-logo" src="{{ asset('src/img/logo.svg') }}" alt="">
+
         <!-- END NAVBAR LOGO -->
       </div>
       <div class="card card-md">
@@ -15,7 +14,7 @@
           <form action="./" method="get" autocomplete="off" novalidate="">
             <div class="mb-3">
               <label class="form-label">Correo Electronico</label>
-              <input type="email" class="form-control" placeholder="tu@studio64.com" autocomplete="off">
+              <input type="email" class="form-control" placeholder="Ingrese correo electrónico" autocomplete="off">
             </div>
             <div class="mb-2">
               <label class="form-label">
@@ -25,7 +24,7 @@
                 </span>
               </label>
               <div class="input-group input-group-flat">
-                <input type="password" class="form-control" placeholder="Tu contrasena" autocomplete="off">
+                <input type="password" class="form-control" placeholder="Ingrese conttraseña" autocomplete="off">
                 <span class="input-group-text">
                   <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="Mostrar contrasena" data-bs-original-title="Show password">
                     <!-- Download SVG icon from http://tabler.io/icons/icon/eye -->
@@ -37,15 +36,12 @@
                 </span>
               </div>
             </div>
-            <div class="mb-2">
-              <label class="form-check">
-                <input type="checkbox" class="form-check-input">
-                <span class="form-check-label">Recordar contrasena en este dispositivo</span>
-              </label>
-            </div>
             <div class="form-footer">
               <button type="submit" class="btn btn-primary w-100">Ingresar</button>
             </div>
           </form>
+          <div class="text-center text-secondary mt-3">
+                    Desarrollado por <a href="#">Paragon+ Corporation</a>
+          </div>
         </div>
     </div>

@@ -528,3 +528,8 @@ video::-webkit-media-controls {
   color: var(--gray-50);
 }
 /* Fin footer */
+
+/* Lognin */
+.s64__login-logo{
+  width: 12rem;
+}
