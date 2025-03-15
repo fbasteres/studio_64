@@ -39,7 +39,9 @@
             </a>
         </ul>
     </div>
-    <div class="text-center mt-6 text-sm">
+</footer>
+
+<div class="text-center mt-6 text-sm">
         <p>
             Desarrollado por 
             <strong>
@@ -48,5 +50,4 @@
             © {{ date('Y') }} Todos los derechos reservados. | Studio 64
         </p>
     </div>
-</footer>
 
