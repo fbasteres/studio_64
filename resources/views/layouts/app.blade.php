@@ -1,3 +1,4 @@
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -8,8 +9,11 @@
         @include('layouts.style')
     </head>
     <body>
+        <div class="page">
             @include('layouts.partials.navbar_2')
             @yield('content')
-            @include('layouts.partials.footer')
+            @include('layouts.partials.footer')        
+        </div>
+            
     </body>
     </html>
