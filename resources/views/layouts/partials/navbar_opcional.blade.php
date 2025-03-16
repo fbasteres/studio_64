@@ -1,4 +1,4 @@
-<nav class="flex justify-between lg:justify-around items-center py-4 bg-white/80 backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10">
+<nav class="flex justify-between lg:justify-around items-center py-4 bg-white/75 backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10">
 
     <!-- Logo -->
     <div class="flex items-center ml-4 lg:ml-0">

@@ -41,7 +41,7 @@
     </div>
 </footer>
 
-<div class="text-center mt-6 text-sm">
+<div class="text-center mt-6 text-sm pb-[2rem]">
         <p>
             Desarrollado por 
             <strong>

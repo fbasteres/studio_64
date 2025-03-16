@@ -7,7 +7,7 @@
     <title>Studio64 @yield('title')</title>
     @include('layouts.style')
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-gray-100">
         @include('layouts.partials.navbar_opcional')            
         @yield('content')
         @include('layouts.partials.footer')
