@@ -1,132 +1,103 @@
 @extends('layouts.app')
-
+@section('title',':: Servicios')
 @section('content')
-<div class="container">
-    <div class="pt-5"></div>
-    <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
 
-            <div class="pt-5"></div>
+<!-- component -->
+<!--
+  Welcome to Tailwind Play, the official Tailwind CSS playground!
 
-            <h3 class="card-title">Project ID</h3>
-            <p class="card-subtitle">Used when interacting with the API.</p>
-            <div class="input-icon">
-              <input type="text" value="prj_5ae74426fe935327a8fa178b07d84ad9" class="form-control" placeholder="Search…" readonly="">
-              <span class="input-icon-addon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1">
-                  <path d="M15 3v4a1 1 0 0 0 1 1h4"></path>
-                  <path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z"></path>
-                  <path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2"></path>
-                </svg>
-              </span>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="row align-items-center">
-              <div class="col">Learn more about <a href="#">Project ID</a></div>
-              <div class="col-auto">
-                <a href="#" class="btn btn-primary btn-2"> Save </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  Everything here works just like it does when you're running Tailwind locally
+  with a real build pipeline. You can customize your config file, use features
+  like `@apply`, or even add third-party plugins.
 
-      <div class="pt-5"></div>
-
-      <div class="container">
-        <div class="row">
-
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <div class="card-stamp">
-            <div class="card-stamp-icon bg-yellow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1">
-                <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
-                <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
-              </svg>
-            </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card with icon bg</h3>
-            <p class="text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa ducimus eum fuga fugiat, ipsa iusto, modi
-              nostrum recusandae reiciendis saepe.
-            </p>
-          </div>
-        </div>
-
-
-        
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <div class="card-stamp">
-            <div class="card-stamp-icon bg-yellow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1">
-                <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
-                <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
-              </svg>
-            </div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card with icon bg</h3>
-            <p class="text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa ducimus eum fuga fugiat, ipsa iusto, modi
-              nostrum recusandae reiciendis saepe.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <div class="ribbon ribbon-top bg-yellow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1">
-              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
-            </svg>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card with top ribbon</h3>
-            <p class="text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa ducimus eum fuga fugiat, ipsa iusto, modi
-              nostrum recusandae reiciendis saepe.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <div class="ribbon bg-red">NEW</div>
-          <div class="card-body">
-            <h3 class="card-title">Card with text ribbon</h3>
-            <p class="text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa ducimus eum fuga fugiat, ipsa iusto, modi
-              nostrum recusandae reiciendis saepe.
-            </p>
-          </div>
-        </div>
-      </div>
-
+  Feel free to play with this example if you're just learning, or trash it and
+  start from scratch if you know enough to be dangerous. Have fun!
+-->
+<div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+  <img src="https://picsum.photos/seed/picsum/1900/850" class="absolute top-0 left-0 min-h-full ob" alt="">
+  <div class="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
+    <div class="col-span-6">
+      <span class="uppercase text-white text-xs font-bold mb-2 block">WE ARE EXPERTS</span>
+      <h1 class="text-white font-extrabold text-5xl mb-8">Finpoint provides Financial Consulting in different ways</h1>
+      <p class="text-stone-100 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button class="mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10">Get started</button>
     </div>
-</div> 
+  </div>
+</div>
+<div class="bg-[#f7d0b6] py-20">
+  <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+    <div class="max-w-xl">
+      <h2 class="font-black text-sky-950 text-3xl mb-4">As the leading experts in this field, we're in over 90 countries</h2>
+      <p class="text-base text-sky-950">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <button class="text-sky-950 uppercase py-3 text-base px-10 border border-sky-950 hover:bg-sky-950 hover:bg-opacity-10">Get started</button>
+  </div>
+</div>
+<div class="py-12 relative overflow-hidden bg-white">
+  <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+    <div class="w-full flex flex-col items-end pr-16">
+      <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">Whether you need Assistance</h2>
+      <div class="h-full mt-auto overflow-hidden relative">
+        <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
+      </div>
+    </div>
 
-<div class="pt-5"></div>
-
-<div class="video-container">
-    <video id="video" autoplay="" loop="" muted="" playsinline="">
-        <source src="http://localhost/studio_64/public/src/img/video/video_portada.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de videos.
-    </video>
+    <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
+      <div class="relative z-20 pl-12">
+        <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
+        <p class="text-white text-sm">
+          Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+        </p>
+        <button class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="pt-5"></div>
-
-
-
+<div class="py-4 relative overflow-hidden bg-white">
+  <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
     
+
+    <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-[#f7d0b6] before:top-0 before:right-0">
+      <div class="relative z-20 pl-12">
+        <h2 class="text-sky-950 font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
+        <p class="text-sky-950 text-sm">
+          Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+        </p>
+        <button class="mt-8 text-sky-950 uppercase py-3 text-sm px-10 border border-sky-950 hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+      </div>
+    </div>
+    <div class="w-full flex flex-col pl-16">
+      <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10">Whether you need Assistance</h2>
+      <div class="h-full mt-auto overflow-hidden relative">
+        <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<div class="py-12 relative overflow-hidden bg-white">
+  <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+    <div class="w-full flex flex-col items-end pr-16">
+      <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">Whether you need Assistance</h2>
+      <div class="h-full mt-auto overflow-hidden relative">
+        <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
+      </div>
+    </div>
+
+    <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
+      <div class="relative z-20 pl-12">
+        <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
+        <p class="text-white text-sm">
+          Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+        </p>
+        <button class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection

@@ -16,12 +16,12 @@
     <!-- Menú principal -->
     <nav id="navbarMenu" class="hidden lg:flex lg:items-center space-x-10">
       <a class="text-white hover:text-blue-400 transition" href="{{ route('inicio1') }}">Inicio</a>
-      <a class="text-white hover:text-blue-400 transition" href="{{ route('servicio.page') }}">Servicios</a>
-      <a class="text-white hover:text-blue-400 transition" href="#">Información</a>
-      <a class="text-white hover:text-blue-400 transition" href="#">Locación</a>
-      <a class="text-white hover:text-blue-400 transition" href="#">Nosotros</a>
-      <a class="text-white hover:text-blue-400 transition" href="#">Contacto</a>
-      <a href="#" class="bg-white text-black px-4 py-1 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition">
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('servicios.page') }}">Servicios</a>
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('informacion.page') }}">Información</a>
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('locacion.page') }}">Locación</a>
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('nosotros.page') }}">Nosotros</a>
+      <a class="text-white hover:text-blue-400 transition" href="{{ route('contacto.page') }}">Contacto</a>
+      <a href="{{ route('comprar.page') }}" class="bg-white text-black px-4 py-1 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition">
   Comprar ahora
 </a>
     </nav>
@@ -36,12 +36,12 @@
   <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md">
     <nav class="flex flex-col space-y-4 p-6">
       <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('inicio1') }}">Inicio</a>
-      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('servicio.page') }}">Servicios</a>
-      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Información</a>
-      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Locación</a>
-      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Nosotros</a>
-      <a class="text-gray-700 hover:text-blue-600 transition" href="#">Contacto</a>
-      <a href="#" class="bg-blue-600 text-white text-center px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Comprar ahora</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('servicios.page') }}">Servicios</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('informacion.page') }}">Información</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('locacion.page') }}">Locación</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('nosotros.page') }}">Nosotros</a>
+      <a class="text-gray-700 hover:text-blue-600 transition" href="{{ route('contacto.page') }}">Contacto</a>
+      <a href="{{ route('comprar.page') }}" class="bg-blue-600 text-white text-center px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Comprar ahora</a>
     </nav>
   </div>
 </header>

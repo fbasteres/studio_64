@@ -17,5 +17,14 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get ('/admin',[DashboardController::class, 'dashboard'])->name('admin');
 
 //Vista Publica
-Route::get ('/servicios',[PageController::class, 'servicios'])->name('servicio.page');
+Route::get ('/servicios',[PageController::class, 'servicios'])->name('servicios.page');
+Route::get ('/informacion',[PageController::class, 'informacion'])->name('informacion.page');
+Route::get ('/locacion',[PageController::class, 'locacion'])->name('locacion.page');
+Route::get ('/nosotros',[PageController::class, 'nosotros'])->name('nosotros.page');
+Route::get ('/contacto',[PageController::class, 'contacto'])->name('contacto.page');
+Route::get ('/planes',[PageController::class, 'planes'])->name('planes.page');
+Route::get ('/comprar',[PageController::class, 'comprar'])->name('comprar.page');
+
+
+
 
