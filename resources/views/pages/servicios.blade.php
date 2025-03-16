@@ -2,19 +2,8 @@
 @section('title',':: Servicios')
 @section('content')
 
-<!-- component -->
-<!--
-  Welcome to Tailwind Play, the official Tailwind CSS playground!
-
-  Everything here works just like it does when you're running Tailwind locally
-  with a real build pipeline. You can customize your config file, use features
-  like `@apply`, or even add third-party plugins.
-
-  Feel free to play with this example if you're just learning, or trash it and
-  start from scratch if you know enough to be dangerous. Have fun!
--->
 <div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
-  <img src="https://picsum.photos/seed/picsum/1900/850" class="absolute top-0 left-0 min-h-full ob" alt="">
+  <img src="https://picsum.photos/seed/picsum/1900/850" class="absolute top-0 left-0 min-h-full max-w-full object-cover" alt="">
   <div class="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
     <div class="col-span-6">
       <span class="uppercase text-white text-xs font-bold mb-2 block">WE ARE EXPERTS</span>
@@ -22,10 +11,11 @@
       <p class="text-stone-100 text-base">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <button class="mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10">Get started</button>
+      <button class="mt-8 text-white uppercase py-2 text-base font-light px-10 border border-white hover:bg-white hover:bg-white rounded-[.5rem]">Get started</button>
     </div>
   </div>
 </div>
+
 <div class="bg-[#f7d0b6] py-20">
   <div class="max-w-screen-lg mx-auto flex justify-between items-center">
     <div class="max-w-xl">
@@ -35,6 +25,7 @@
     <button class="text-sky-950 uppercase py-3 text-base px-10 border border-sky-950 hover:bg-sky-950 hover:bg-opacity-10">Get started</button>
   </div>
 </div>
+
 <div class="py-12 relative overflow-hidden bg-white">
   <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
     <div class="w-full flex flex-col items-end pr-16">
@@ -58,8 +49,6 @@
 
 <div class="py-4 relative overflow-hidden bg-white">
   <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
-    
-
     <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-[#f7d0b6] before:top-0 before:right-0">
       <div class="relative z-20 pl-12">
         <h2 class="text-sky-950 font-black text-5xl leading-snug mb-10">Finpoint is here <br>to help you</h2>
@@ -75,7 +64,6 @@
         <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt="">
       </div>
     </div>
-
   </div>
 </div>
 
