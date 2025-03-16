@@ -15,12 +15,12 @@
 </section>
 
     <!-- component -->
-<section class="bg-white dark:bg-gray-900">
+<section>
             <div class="container px-6 py-10 mx-auto">
                 <div class="lg:flex lg:items-center">
                     <div class="w-full space-y-12 lg:w-1/2 ">
                         <div>
-                            <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Contáctanos</h1>
+                            <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-dark">Contáctanos</h1>
                         
                             <div class="mt-2">
                                 <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
@@ -37,9 +37,9 @@
                             </span>
 
                             <div class="mt-4 md:mx-4 md:mt-0">
-                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Nuestro WhatsApp</h1>
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-dark">Nuestro WhatsApp</h1>
 
-                                <a href="https://wa.me/51931140589" target="_blank" class="text-green-600 font-bold hover:underline text-lg md:text-xl block mt-2">
+                                <a href="https://wa.me/51931140589" target="_blank" class="text-blak font-bold hover:text-green-600 text-lg md:text-xl block mt-2">
                                 +51 931 140 589
                                 </a>
 
@@ -54,11 +54,11 @@
                             </span>
 
                             <div class="mt-4 md:mx-4 md:mt-0">
-                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Nuestro Correo Electónico</h1>
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-dark">Nuestro Correo Electónico</h1>
 
-                                <p class="mt-3 text-gray-500 dark:text-gray-300">
-                                    ventas@studio64peru.pe
-                                </p>
+                                 <a href="" target="_blank" class="text-blak font-bold hover:text-red-500 text-lg md:text-xl block mt-2">
+                                ventas@studio64peru.pe
+                                </a>
                             </div>
                         </div>
 
@@ -71,7 +71,7 @@
                             </span>
 
                             <div class="mt-4 md:mx-4 md:mt-0">
-                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Nuestras Redes Sociales</h1>
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-dark">Nuestras Redes Sociales</h1>
 
                                 <p class="mt-3 text-gray-500 dark:text-gray-300">
                                     <ul class="flex justify-rigth space-x-4 mt-4">
