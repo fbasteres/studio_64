@@ -1,16 +1,18 @@
 @extends('layouts.app')
-@section('title',':: locacion')
+@section('title',':: Contacto')
 @section('content')
 
-<div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
-  <img src="https://picsum.photos/seed/picsum/1900/850" class="absolute top-0 left-0 min-h-full max-w-full object-cover" alt="">
-  <div class="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
-    <div class="col-span-6">
-      <span class="uppercase text-white text-xs font-bold mb-2 block">STUDIO64 PERU</span>
-      <h1 class="text-white font-extrabold text-5xl mb-8">Contacto</h1>
+<section
+  class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2670&auto=format&fit=crop)] bg-cover bg-top bg-no-repeat"
+>
+<br></br>
+  <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="text-rigth ltr:sm:text-left rtl:sm:text-right container px-4">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Contacto</h2>
+        <p class="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"></p>
     </div>
   </div>
-</div>
+</section>
 
     <!-- component -->
 <section class="bg-white dark:bg-gray-900">
