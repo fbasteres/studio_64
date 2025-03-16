@@ -33,12 +33,12 @@
 
     <!-- Links Escritorio -->
     <div class="hidden lg:flex items-center space-x-8">
-        <a class="text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">Home</a>
-        <a class="text-gray-600 font-semibold text-blue-600 cursor-pointer">Themes</a>
-        <a class="text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">Developers</a>
-        <a class="text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">Pricing</a>
-        <a class="text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">Blog</a>
-        <a class="text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">About Us</a>
+        <a href="{{ route('inicio1') }}" class="@if(request()->routeIs('inicio1')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif cursor-pointer transition-colors duration-300">Inicio</a>
+        <a href="{{ route('servicios.page') }}" class="@if(request()->routeIs('servicios.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif cursor-pointer transition-colors duration-300">Servicios</a>
+        <a href="{{ route('informacion.page') }}" class="@if(request()->routeIs('informacion.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif cursor-pointer transition-colors duration-300">Informacion</a>
+        <a href="{{ route('locacion.page') }}" class="@if(request()->routeIs('locacion.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif cursor-pointer transition-colors duration-300">Locacion</a>
+        <a href="{{ route('nosotros.page') }}" class="@if(request()->routeIs('nosotros.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif cursor-pointer transition-colors duration-300">Nosotros</a>
+        <a href="{{ route('contacto.page') }}" class="@if(request()->routeIs('contacto.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif cursor-pointer transition-colors duration-300">Contacto</a>
     </div>
 
     <!-- Botones Escritorio -->
@@ -62,20 +62,20 @@
 <!-- Menú Móvil -->
 <div id="mobileMenu" class="lg:hidden fixed top-0 right-0 h-full w-64 bg-white/90 backdrop-blur-md shadow-xl transform translate-x-full transition-transform duration-300 z-20">
     <div class="p-6 space-y-6">
-        <div class="flex justify-end">
-            <button onclick="toggleMenu()" class="p-2">
-                <svg class="h-8 w-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-            </button>
-        </div>
-        <a class="block text-gray-600 hover:text-blue-500 text-lg">Home</a>
-        <a class="block text-blue-600 font-semibold text-lg">Themes</a>
-        <a class="block text-gray-600 hover:text-blue-500 text-lg">Developers</a>
-        <a class="block text-gray-600 hover:text-blue-500 text-lg">Pricing</a>
-        <a class="block text-gray-600 hover:text-blue-500 text-lg">Blog</a>
-        <a class="block text-gray-600 hover:text-blue-500 text-lg">About Us</a>
+    <div class="flex justify-end">
+        <button onclick="toggleMenu()" class="p-2">
+            <svg class="h-8 w-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
     </div>
+    <a href="{{ route('inicio1') }}" class="block @if(request()->routeIs('inicio1')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif text-lg">Inicio</a>
+    <a href="{{ route('servicios.page') }}" class="block @if(request()->routeIs('servicios.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif text-lg">Servicios</a>
+    <a href="{{ route('informacion.page') }}" class="block @if(request()->routeIs('informacion.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif text-lg">Informacion</a>
+    <a href="{{ route('locacion.page') }}" class="block @if(request()->routeIs('locacion.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif text-lg">Locacion</a>
+    <a href="{{ route('nosotros.page') }}" class="block @if(request()->routeIs('nosotros.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif text-lg">Nosotros</a>
+    <a href="{{ route('contacto.page') }}" class="block @if(request()->routeIs('contacto.page')) text-blue-600 font-semibold @else text-gray-600 hover:text-blue-500 @endif text-lg">Contacto</a>
+</div>
 </div>
 
 <script>
