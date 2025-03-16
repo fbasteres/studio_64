@@ -48,7 +48,7 @@
 
           <li>
             <a
-              href="#"
+              href="{{ route('planes.index') }}"
               class="group relative flex justify-center rounded-sm px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
             >
               <svg

@@ -21,7 +21,7 @@
       <a class="text-white hover:text-blue-400 transition" href="{{ route('locacion.page') }}">Locación</a>
       <a class="text-white hover:text-blue-400 transition" href="{{ route('nosotros.page') }}">Nosotros</a>
       <a class="text-white hover:text-blue-400 transition" href="{{ route('contacto.page') }}">Contacto</a>
-      <a href="{{ route('comprar.page') }}" class="bg-white text-black px-4 py-1 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition">
+      <a href="{{ route('comprar.page') }}" class="bg-white text-black px-4 py-1 rounded-[.2rem] border border-transparent hover:bg-black hover:text-white hover:border-white transition">
   Comprar ahora
 </a>
     </nav>

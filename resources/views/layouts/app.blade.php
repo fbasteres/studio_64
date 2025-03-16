@@ -8,10 +8,8 @@
     @include('layouts.style')
 </head>
 <body class="overflow-x-hidden">
-    <div class="page">
-        @include('layouts.partials.navbar_2')
+        @include('layouts.partials.navbar_opcional')            
         @yield('content')
-        @include('layouts.partials.footer')        
-    </div>  
+        @include('layouts.partials.footer')
 </body>
 </html>

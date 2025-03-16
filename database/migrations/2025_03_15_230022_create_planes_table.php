@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('planes', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre')->unique();
+            $table->text('descripcion')->nullable;
+            $table->decimal('precio', 10, 2);
+            $table->enum('moneda',['PEN', 'USD'])->default('PEN');
+            $table->integer('duracion_dias')->default(30);
+            $table->boolean('activo')->default(true);
+            $table->json('caracteristicas')->nullable();
             $table->timestamps();
         });
     }

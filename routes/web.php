@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\PlanController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Page\PageController;
@@ -14,7 +15,8 @@ Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 //Administracion
-Route::get ('/admin',[DashboardController::class, 'dashboard'])->name('admin');
+Route::get ('/admin', [DashboardController::class, 'dashboard'])->name('admin');
+Route::get ('/admin/planes', [PlanController::class, 'index'])->name('planes.index'); 
 
 //Vista Publica
 Route::get ('/servicios',[PageController::class, 'servicios'])->name('servicios.page');
