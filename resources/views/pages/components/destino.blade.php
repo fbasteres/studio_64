@@ -5,20 +5,19 @@
         <!-- Contenedor de Tarjetas -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <!-- Tarjeta Bodas -->
-            <div class="group relative overflow-hidden rounded-[1.25rem] shadow-lg hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.33,0.84,0.5,1.05)]">
+            <div class="group relative overflow-hidden rounded-[.9rem] shadow-lg hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.33,0.84,0.5,1.05)]">
                 <div class="aspect-[4/5] overflow-hidden">
                     <img src="{{ asset('src/img/fotos/matri.jpg') }}" alt="Bodas" 
-                         class="h-full w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.15,0.75,0.25,1)] 
-                                scale-[1.01] group-hover:scale-103">
+                         class="h-full w-full object-cover transition-transform duration-500 ease-out scale-100 group-hover:scale-110 image-zoom">
                 </div>
                 
                 <!-- Overlay de contenido -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end items-center text-center p-6 pb-8 space-y-3">
                     <!-- Título con efecto flotante -->
                     <div class="overflow-hidden h-[42px] w-full transform transition-all duration-500 ease-out group-hover:-translate-y-1">
-                        <h1 class="text-2xl font-semibold text-white/95 tracking-tight transition-all duration-700 ease-out 
+                        <h1 class="s64_font_lostamasta tracking-tight transition-all duration-700 ease-out 
                                   translate-y-0 group-hover:translate-y-[2px]">
-                            Bodas
+                        Bodas
                         </h1>
                     </div>
                     
@@ -51,16 +50,15 @@
             </div>
 
             <!-- Tarjeta XV Años -->
-            <div class="group relative overflow-hidden rounded-[1.25rem] shadow-lg hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.33,0.84,0.5,1.05)]">
+            <div class="group relative overflow-hidden rounded-[.9rem] shadow-lg hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.33,0.84,0.5,1.05)]">
                 <div class="aspect-[4/5] overflow-hidden">
                     <img src="{{ asset('src/img/fotos/quince.jpg') }}" alt="XV Años" 
-                         class="h-full w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.15,0.75,0.25,1)] 
-                                scale-[1.01] group-hover:scale-103">
+                         class="h-full w-full object-cover transition-transform duration-500 ease-out scale-100 group-hover:scale-110 image-zoom">
                 </div>
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end items-center text-center p-6 pb-8 space-y-3">
                     <div class="overflow-hidden h-[42px] w-full transform transition-all duration-500 ease-out group-hover:-translate-y-1">
-                        <h1 class="text-2xl font-semibold text-white/95 tracking-tight transition-all duration-700 ease-out 
+                        <h1 class="s64_font_lostamasta tracking-tight transition-all duration-700 ease-out 
                                   translate-y-0 group-hover:translate-y-[2px]">
                             XV Años
                         </h1>
@@ -92,16 +90,15 @@
             </div>
 
             <!-- Tarjeta Infantiles -->
-            <div class="group relative overflow-hidden rounded-[1.25rem] shadow-lg hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.33,0.84,0.5,1.05)]">
+            <div class="group relative overflow-hidden rounded-[.9rem] shadow-lg hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.33,0.84,0.5,1.05)]">
                 <div class="aspect-[4/5] overflow-hidden">
                     <img src="{{ asset('src/img/fotos/infantil.jpg') }}" alt="Infantiles" 
-                         class="h-full w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.15,0.75,0.25,1)] 
-                                scale-[1.01] group-hover:scale-103">
+                         class="h-full w-full object-cover transition-transform duration-500 ease-out scale-100 group-hover:scale-110 image-zoom">
                 </div>
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end items-center text-center p-6 pb-8 space-y-3">
                     <div class="overflow-hidden h-[42px] w-full transform transition-all duration-500 ease-out group-hover:-translate-y-1">
-                        <h1 class="text-2xl font-semibold text-white/95 tracking-tight transition-all duration-700 ease-out 
+                        <h1 class="s64_font_lostamasta tracking-tight transition-all duration-700 ease-out 
                                   translate-y-0 group-hover:translate-y-[2px]">
                             Infantiles
                         </h1>
@@ -144,25 +141,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    @keyframes fade-delayed {
-        0% { opacity: 0; transform: translateY(10px); }
-        50% { opacity: 0; }
-        100% { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fade-delayed {
-        animation: fade-delayed 1.2s cubic-bezier(0.16, 0.84, 0.44, 1) both;
-        animation-delay: 0.4s;
-    }
-
-    /* Optimizaciones de rendimiento */
-    @media (prefers-reduced-motion: reduce) {
-        .transition-all,
-        .group-hover\:translate-y-1,
-        .animate-fade-delayed {
-            transition: none !important;
-            animation: none !important;
-        }
-    }
-</style>

@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+    font-family: 'masta';
+    src: url('../fonts/lostamasta/LostaMasta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import 'tailgrids.css';
 
 @tailwind base;
@@ -19,8 +26,7 @@
     --gray-900: #111827;
     --gray-950: #030712;
     --whatsapp-color:#77bb4a;
-    
-
+    --font-losta-masta: 'masta';
     --s64-border-radius: .5rem;
 }
 
@@ -32,6 +38,41 @@
     box-sizing: border-box;
 }
 */
+.s64_font_lostamasta {
+    font-family: var(--font-losta-masta), sans-serif;
+    font-size: 2rem;
+}
+
+/* Seccion destino */
+@keyframes fade-delayed {
+        0% { opacity: 0; transform: translateY(10px); }
+        50% { opacity: 0; }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-delayed {
+        animation: fade-delayed 1.2s cubic-bezier(0.16, 0.84, 0.44, 1) both;
+        animation-delay: 0.4s;
+    }
+
+    /* Optimizaciones de rendimiento */
+    @media (prefers-reduced-motion: reduce) {
+        .transition-all,
+        .group-hover\:translate-y-1,
+        .animate-fade-delayed {
+            transition: none !important;
+            animation: none !important;
+        }
+    }
+
+    .image-zoom {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Suaviza la animación */
+    will-change: transform; /* Mejora el rendimiento en algunos navegadores */
+
+    /* Animaciones de botones */
+    
+}
+/* Fin Seccion destino */
+
 .prg-dev{
     background: no-repeat center center url("../../public/src/img/fotos/DSC00177.webp");
     background-size: cover;

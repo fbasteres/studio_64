@@ -1,4 +1,4 @@
-import './tabler';
+import './navbar';
 import './bootstrap';
 import Alpine from 'alpinejs';
 
